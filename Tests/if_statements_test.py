@@ -1,6 +1,7 @@
 import unittest
 from even_odd import even_or_odd
-
+from bonus import main
+from bonus import bonus
 
 class MyTestCase(unittest.TestCase):
     def test_even_odd(self):
@@ -11,7 +12,9 @@ class MyTestCase(unittest.TestCase):
     # at the top of this file. Make sure to write three test cases.
     def test_bonus(self):
         # when you are ready to write your tests, go ahead and delete pass
-        pass
+        self.assertEqual(105.0, bonus(10,100))
+        self.assertEqual(100.0, bonus(4,100))
+        self.assertEqual(1827, bonus(5,1827))
 
 
 
