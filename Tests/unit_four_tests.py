@@ -31,6 +31,12 @@ class MyTestCase(unittest.TestCase):
     def test_rps(self):
         self.assertEqual("You win!", rock_paper_scissors.who_wins(3, 2))
         self.assertEqual("It is a tie", rock_paper_scissors.who_wins(1, 1))
+    # def test_rps(self):
+    #     self.assertEqual((1,20), assignment_four.get_card()))
+
+    def test_get_card(self):
+        x = assignment_four.get_card()
+        self.assertTrue(x>= 1 and x<= 10)
 
     
 
