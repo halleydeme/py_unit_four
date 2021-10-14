@@ -37,7 +37,10 @@ class MyTestCase(unittest.TestCase):
     def test_get_card(self):
         x = assignment_four.get_card()
         self.assertTrue(x>= 1 and x<= 10)
-
+    def test_get_winner(self):
+        self.assertEqual("sorry,dealer won :(", assignment_four.get_winner(4,9))
+        self.assertEqual("you won!" , assignment_four.get_winner(9,5))
+        self.assertEqual("It's a tie!", assignment_four.get_winner(9,9))
     
 
 if __name__ == '__main__':
